@@ -1,0 +1,7 @@
+---
+- name: Instala extensoes PHP
+  apt: name={{ item }} state=present
+  with_items:
+    - php-cli
+    - php-json
+    - php-gd

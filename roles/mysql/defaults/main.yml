@@ -1,0 +1,10 @@
+---
+# nome do banco de dados 
+wp_mysql_db: wordpress
+
+# login criando para aplicação
+wp_mysql_user: wordpress
+
+# senha atribuida para login da aplicação
+
+wp_mysql_password: wp_db_wordpress

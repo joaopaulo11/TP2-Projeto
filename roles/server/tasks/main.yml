@@ -1,0 +1,13 @@
+---
+- name: Atualiza cache APT do servidor
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Instala pacotes
+  apt: name={{ item }} state=present
+  with_items:
+    - apache2
+    - mysql-server
+    - php-mysql
+    - php
+    - libapache2-mod-php
+    - python-mysqldb
